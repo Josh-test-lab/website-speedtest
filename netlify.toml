@@ -1,0 +1,14 @@
+[build]  
+  # Netlify functions 函式服務
+  functions = "netlify_functions"  # 資料夾
+
+# Speedtest API
+[[redirects]]
+  from = "/api/speedtest_garbage"
+  to = "/.netlify/functions/speedtest_garbage"
+  status = 200
+
+[[redirects]]
+  from = "/api/speedtest_empty"
+  to = "/.netlify/functions/speedtest_empty"
+  status = 200
